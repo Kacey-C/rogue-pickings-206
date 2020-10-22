@@ -14,7 +14,6 @@ body {
 .container{
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,7 +38,7 @@ h3 {
 	font-size: 1.125rem;
 }
 h4 {
-	font-size: .75rem;
+	font-size: .9rem;
 }
 
 p {
@@ -82,7 +81,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875rem;
-	padding: 10px 0;
+	padding: 10px;
 	list-style: none;
 }
 header nav ul li a{
@@ -183,19 +182,9 @@ footer span {
 
 /* ------ Tablet Styles --------- */
 @media all and (min-width: 768px) {
-	header {
-		flex: auto;
-	}
-	
-	header h1 {
-		margin: 0;
-		padding: 38px 0;
-		border-bottom: none;
-	}
-	
 	.bottom-section {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: stretch;
 		flex-flow: row wrap;
 	}
@@ -209,5 +198,24 @@ footer span {
 
 /* -------- Desktop Styles ---------- */
 @media all and (min-width: 1200px) {
+	header {
+		justify-content: center;
+		flex-flow: row nowrap;
+	}
 
+	header nav ul {
+		display: flex;
+		justify-content: space-between;		
+	}
+
+	header h1 {
+		border-bottom: none;
+		text-align: left;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 31.5%;
+	}
 }
