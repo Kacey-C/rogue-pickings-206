@@ -130,10 +130,7 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
+
 
 .section-two h4,
 .section-three h4 {
@@ -193,6 +190,11 @@ footer span {
 	.section-two,
 	.section-three {
 		width: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
 	}
 }
 
